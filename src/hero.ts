@@ -10,7 +10,7 @@ class Hero {
     /* 砍树 */
     lumbering(forest: Forest) {
         forest.decreaseWood()
-        console.log(this.name, ' 砍了一颗树!');
+        console.log(this.name, '在' + forest.getName(), '砍了一颗树!');
     }
 }
 
