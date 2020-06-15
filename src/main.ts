@@ -6,6 +6,7 @@ class main {
     constructor(app: any) {
         this.app = app
     }
+    
     init() {
         this.api = new API(this.app);
         this.api.index()

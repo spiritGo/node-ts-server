@@ -1,3 +1,4 @@
+import Forest from './space';
 class Hero {
     name: string // 名字
     age: number // 年龄
@@ -6,22 +7,11 @@ class Hero {
         this.age = age
     }
 
-    /* 跑 */
-    run() {
-        console.log(this.name + ' run');
-    }
-
-    /* 走 */
-    walk() {
-        console.log(this.name + ' walk');
-    }
-
-    /* 交谈 */
-    talk() {
-        console.log(this.name + ' talk');
+    /* 砍树 */
+    lumbering(forest: Forest) {
+        forest.decreaseWood()
+        console.log(this.name, ' 砍了一颗树!');
     }
 }
 
-/* 创建人物 */
-let hero = new Hero('亚瑟', 200)
-hero.run()
+export default Hero
